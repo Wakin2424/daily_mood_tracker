@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Mood Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌤️ Daily Mood Tracker</h1>
+      <p>How are you feeling today? Log your mood and reflect.</p>
+    </header>
+
+    <!-- Part 1: Variables & Conditionals -->
+    <section id="mood-input">
+      <h2>1. How Do You Feel Today?</h2>
+      <select id="mood-select">
+        <option value="">Choose a mood...</option>
+        <option value="happy">Happy 😊</option>
+        <option value="sad">Sad 😢</option>
+        <option value="energetic">Energetic ⚡</option>
+        <option value="tired">Tired 😴</option>
+        <option value="calm">Calm 🧘‍♂️</option>
+      </select>
+      <button onclick="logMood()">Log Mood</button>
+      <p id="mood-message"></p>
+    </section>
+
+    <!-- Part 2: Custom Functions -->
+    <section id="quick-actions">
+      <h2>2. Quick Actions</h2>
+      <button onclick="showEncouragement()">Need Encouragement?</button>
+      <button onclick="calculateMoodScore()">Calculate Mood Score</button>
+      <p id="action-output"></p>
+    </section>
+
+    <!-- Part 3: Loops -->
+    <section id="mood-history">
+      <h2>3. Recent Moods</h2>
+      <ul id="mood-list"></ul>
+      <button onclick="clearHistory()">Clear History</button>
+    </section>
+
+    <!-- Part 4: DOM Interactions -->
+    <section id="theme-controls">
+      <h2>4. Personalize</h2>
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+      <button onclick="resetApp()">Reset All Data</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
